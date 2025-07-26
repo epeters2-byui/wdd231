@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course homepage for WDD 231 showing portfolio, course progress, and links." />
+  <meta name="author" content="Emmanuel M. Peters" />
+  <title>WDD 231 Course Home Page</title>
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>wdd 231- Peters</h1>
-    
+  <header>
+  <div class="header-top">
+    <img src="images/logo-networking.svg" alt="Site Logo" />
+    <span class="site-name">Emmanuel M. Peters</span>
+  </div>
+
+  <nav class="main-nav">
+    <ul class="navigation">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="chamber/index.html">Chamber Project</a></li>
+      <li><a href="final/index.html">Final Project</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <h1>Home</h1>
+
+<section class="about-student">
+  <div class="about">
+    <h2>About Me</h2>
+    <p>I am a Liberian, who is interested in studying Applied Technology with forcus on Software Development. My interest grows because I see technology as step forward for development in developing countries, like my country Liberia. As someone who loves teaching, I can use my skill acquired to help others learn technology to become self-reliant. 
+      Additionaly, I studied agriculture and environment. I see technology-sofetware development as a mean to integrate the others and make people life better.
+      Importantly, I am a member of the LDS, serving as Second Councilor in my ward. I have five children with my wife Etta Doe-Peters. My family and I like going out and travel locally.
+       I hope to improve and help others become better. 
+    </p>
+  </div>
+  <div class="student-photo">
+    <h2>Student Photo</h2>
+    <img src="images/photo.webp" alt="Student Photo" />
+  </div>
+</section>
+
+ <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button onclick="filterCourses('all')">All</button>
+        <button onclick="filterCourses('wdd')">WDD</button>
+        <button onclick="filterCourses('cse')">CSE</button>
+      </div>
+      <div id="course-container"></div>
+      <p>Total Credits: <span id="total-credits">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/epeters2-byui" target="_blank"><img src="images/icons8-github.svg" alt="GitHub" /></a>
+      <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"/></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="instagram icon"/></a>            
+    </div>
+    <p>&copy; <span id="currentyear"></span> • Your Name • Liberia</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

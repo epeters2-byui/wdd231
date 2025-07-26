@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .about-student {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  #course-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+  }
+
+  .about-me,
+  .student-photo {
+    flex: unset;
+    width: 100%;
+  }
+}
