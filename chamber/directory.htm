@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberia Chamber of Commerce - Directory</title>
+  <meta name="description" content="Explore the official business directory of the Liberia Chamber of Commerce" />
+  <meta name="author" content="Emmanuel Peters" />
+
+  <!-- Facebook Open Graph Meta  -->
+<meta property="og:title" content="Liberia Chamber of Commerce">
+<meta property="og:description" content="Promoting business excellence and development in Liberia.">
+<meta property="og:image" content="https://yourdomain.com/images/chamber-banner.jpg">
+<meta property="og:url" content="https://yourdomain.com/index.html">
+<meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/scritps.js" defer></script>
+  <script src="data/members.json" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/logo.svg" alt="Chamber Logo" />
+        <h1>Liberia Chamber of Commerce</h1>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="chamber/directory.html" class="active">Business Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="directory-header">
+      <h2>Business Directory</h2>
+      <div class="view-toggle">
+        <button id="gridViewBtn">Grid View</button>
+        <button id="listViewBtn">List View</button>
+      </div>
+    </section>
+
+    <section id="members" class="grid-view"></section>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Liberia Chamber of Commerce</p>
+      <p>Emmanuel M. Peters | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

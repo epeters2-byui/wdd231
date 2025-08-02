@@ -1,0 +1,58 @@
+/* Reset */
+@import url('../css/normalize.css');
+
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+a { color: #007bff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+header { background: #007bff; color: #333; padding: 1rem; font-size: 12px; }
+.header-inner { max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.logo-title { display: flex; align-items: center; gap: 0.5rem; }
+.logo { height: 40px; width: auto; }
+.logo-title h1 { margin: 0; font-size: 16px; }
+.navigation { list-style: none; display: flex; gap: 0.5rem; margin-left: auto; }
+.navigation li { color: #fff; border-radius: 4px; }
+.navigation li a { padding: 0.5rem 0.75rem; color: white; font-size: 12px; display: block; }
+
+/* Directory Header */
+.directory-header { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center; }
+.view-toggle button { padding: 0.5rem 1rem; border: 1px solid #004080; background: white; color: #004080; border-radius: 4px; }
+.view-toggle button:hover { background: #004080; color: white; }
+
+/* Member Grid/List Container */
+#members { gap: 1rem; padding: 1rem; margin: auto; }
+.grid-view { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width: 1200px; }
+.list-view { display: block; max-width: 800px; }
+
+/* Cards */
+.member-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; display: flex; padding: 1rem; align-items: flex-start; gap: 1rem; }
+.member-card .info { flex: 1; }
+.member-card img { max-width: 75px; object-fit: contain; border-radius: 5px; }
+.level-badge { padding: 0.4rem 0.6rem; border-radius: 4px; font-weight: bold; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; }
+
+/* Membership badge colors */
+.member.gold .level-badge { background: gold; color: #000; }
+.member.silver .level-badge { background: silver; color: #000; }
+.member.member .level-badge { background: #ddd; color: #333; }
+
+/* Zebra striping */
+.list-view .member-card:nth-child(odd) { background: #f0f8ff; }
+.list-view .member-card:nth-child(even) { background: #e6ffe6; }
+
+/* Footer */
+footer { background: #002a50; color: white; text-align: center; padding: 1.5rem 1rem; }
+.footer-inner { max-width: 1200px; margin: auto; font-size: 0.9rem; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .member-card { flex-direction: column; align-items: center; }
+  .member-card .info { text-align: center; }
+}

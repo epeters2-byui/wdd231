@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Elite Surveillance Group",
+    "address": "Barnesville Road, Montserrado County, Republic of Liberia",
+    "phone": "+231-778-416-760",
+    "website": "https://elitesurveillancegroup.com/",
+    "image": "elite_surveilance.svg",
+    "membership": 3
+  },
+  {
+    "name": "Gro Green Inc.",
+    "address": "Capitol Bye Pass, Monrovia, Liberia",
+    "phone": "+231 880-555-552",
+    "website": "https://grogreen-lr.com/",
+    "image": "greengro.svg",
+    "membership": 2
+  },
+  {
+    "name": "TAT Consulting Group",
+    "address": "2nd Floor, Danny Horton Building, Monrovia, Liberia",
+    "phone": "+231 778-321-801",
+    "website": "https://www.tatconsg.com/",
+    "image": "tat.svg",
+    "membership": 1
+  },
+  {
+    "name": "Mano Manufacturing Company (MANCO)",
+    "address": "Wood Camp, Duazon",
+    "phone": "+231 886-513-514",
+    "website": "http://www.manomanufacturing.com/",
+    "image": "mano.svg",
+    "membership": 2
+  },
+  {
+    "name": "Millennium Construction Inc.",
+    "address": "Opposite the EBK Barracks, RIA Highway, Liberia",
+    "phone": "+231775811061 | +231775924206",
+    "website": "https://afrikta.com/listing/millennium-construction-inc/",
+    "image": "millcon.svg",
+    "membership": 3
+  },
+  {
+    "name": "Green Cons",
+    "address":"Gurley & Broad Streets, Monrovia, Liberia",
+    "phone": "+231 886-530-870",
+    "website": "https://greenconsliberia.com/",
+    "image": "greencons.svg",
+    "membership": 1
+  },
+  {
+    "name": "Kernel Fresh",
+    "address": "Duport Road Kingdom Care Community, Paynesville, Liberia",
+    "phone": "+231 770-537-635",
+    "website": "https://kernelfreshpremium.com/",
+    "image": "kernelfresh.svg",
+    "membership": 2
+  },
+  {
+    "name": "Liberian Agricultural Company",
+    "address": "20th Street, Sinkor, Monrovia",
+    "phone": "+231  886-557-533",
+    "website": "https://socfin.com/en/investors/lac/",
+    "image": "lac.svg",
+    "membership": 1
+  }
+  
+]
