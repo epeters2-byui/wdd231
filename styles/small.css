@@ -1,0 +1,354 @@
+@media (max-width: 767px) {
+/* HEADER and Logo left */
+    header {
+        background: #ffffff;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .header-top img {
+        filter: none;
+        width: 50px;
+        height: 50px;
+    }
+
+    .site-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a1a2e;
+    }
+
+    /* HAMBURGER is Visible on Mobile */
+    #menu {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #1a1a2e;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 0.25rem 0.5rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "✕";
+    }
+
+    /* Code for NAVIGATION */
+    .main-nav {
+        background: #1a1a2e;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        flex-shrink: 1;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.75rem 1rem;
+        font-weight: 500;
+        transition: color 0.3s, background 0.3s;
+        border-radius: 0;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    nav ul li a:hover {
+        color: #f1c40f;
+        background: rgba(255,255,255,0.1);
+    }
+
+    nav ul li a.active {
+        color: #f1c40f;
+        font-weight: 700;
+    }
+
+    /* MAIN CONTENT */
+    main {
+        padding: 1.5rem;
+    }
+
+    /* HOME HEADING */
+    h1 {
+        font-size: 1.8rem;
+        color: #1a1a2e;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0;
+        border-bottom: none;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    /* ABOUT STUDENT */
+    .about-student {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        align-items: stretch;
+    }
+
+    .about {
+        flex: none;
+        background: #ffffff;
+        padding: 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        order: 1;
+        overflow: hidden;
+    }
+    .student-photo {
+        flex: none;
+        background: #ffffff;
+        padding: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        order: 2;
+        overflow: hidden;
+    }
+    /* Heading */
+    .about h2,
+    .student-photo h2 {
+        background: #1a1a2e;
+        color: #ffffff;
+        padding: 0.75rem 1rem;
+        margin: 0 0 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    /* This is for the Content inside about and photo */
+    .about p {
+        padding: 0 1rem 1rem 1rem;
+        color: #555;
+        line-height: 1.8;
+    }
+    .about p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 1.5rem;
+    }
+    .student-photo img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 8px;
+        margin: 0 auto 1.5rem auto;
+        display: block;
+    }
+    /* This shows COURSES SECTION */
+    .courses {
+        background: #ffffff;
+        padding: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+    /* COURSES HEADING */
+    .courses h2 {
+        background: #1a1a2e;
+        color: #ffffff;
+        padding: 0.75rem 1rem;
+        margin: 0 0 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    /* For the Content inside courses */
+    .courses .filter-buttons,
+    .courses #courseContainer,
+    .courses .total-credits {
+        padding: 0 1rem;
+    }
+    /* FOR THE FILTER BUTTONS. IT SHOWS THREE IN ONE HORIZONTAL ROW */
+    .filter-buttons {
+        display: flex;
+        flex-direction: row;        /* CARTEGORIES OF IN one horizontal row */
+        flex-wrap: nowrap;          /* NO wrapING */
+        justify-content: space-between;
+        gap: 0.5rem;
+        margin: 0 0 1.5rem 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .courses button {
+        padding: 0.5rem 0.25rem;
+        border: 2px solid #1a1a2e;
+        background: #ffffff;
+        color: #1a1a2e;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.75rem;         /* This fits all three */
+        transition: all 0.3s ease;
+        flex: 1;                    /* Give equal width */
+        min-width: 0;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .courses button:hover {
+        background: #1a1a2e;
+        color: #ffffff;
+    }
+    .courses button.active {
+        background: #1a1a2e;
+        color: #ffffff;
+    }
+    /* This is for COURSE GRID */
+    #courseContainer {
+        display: grid;
+        grid-template-columns: 1fr;   /* block under block */
+        gap: 1rem;
+        margin: 0 0 1.5rem 0;
+    }
+    /* COURSE CARDS */
+    .course-card {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        border-left: 4px solid #888;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+    }
+    .course-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .course-card.completed {
+        border-left-color: #27ae60;
+        background: #eafaf1;
+    }
+    .course-card .course-code {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #1a1a2e;
+    }
+    .course-card .course-name {
+        color: #555;
+        margin: 0.25rem 0;
+        flex: 1;
+    }
+    .course-card .course-credits {
+        display: inline-block;
+        background: #ddd;
+        padding: 0.2rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #555;
+        align-self: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .course-card.completed .course-credits {
+        background: #82e0aa;
+        color: #1a5a2e;
+    }
+    .course-card .course-status {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .course-card.completed .course-status {
+        color: #27ae60;
+    }
+    .course-card:not(.completed) .course-status {
+        color: #e67e22;
+    }
+    /* THIS IS FOR THE TOTAL CREDITS */
+    .total-credits {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        text-align: center;
+        padding: 0.75rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border: 2px solid #1a1a2e;
+        margin: 0 0 1.5rem 0;
+        margin-bottom: 2rem;
+    }
+    #totalCredits {
+        color: #1a5a2e;
+        font-size: 1.2rem;
+    }
+    /* FOOTER*/
+    footer {
+        background: #1a1a2e;
+        color: #ffffff;
+        padding: 1.5rem 1rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .social a {
+        display: inline-block;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: #ffffff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .social a:hover {
+        transform: scale(1.15);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .social img {
+        width: 30px;
+        height: 30px;
+        filter: none;
+        display: block;
+    }
+    footer p {
+        margin: 0.25rem 0;
+    }
+    #lastModified {
+        color: #aaa;
+        font-size: 0.875rem;
+    }
+}
