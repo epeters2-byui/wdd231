@@ -1,0 +1,99 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+a { color: #007bff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* The Header of the site */
+header { background: #004080; color: white; padding: 1rem; }
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.logo-title { display: flex; align-items: center; gap: 0.5rem; }
+.logo { height: 40px; }
+.logo-title h1 { margin: 0; font-size: 16px; }
+
+/* Hamburger button for mobile only*/
+#menu {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  margin-left: auto;
+}
+#menu::before { content: "☰"; }
+#menu.open::before { content: "✕"; }
+
+/* For the Navigation of mobile dropdown */
+.navigation {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+.navigation.open { display: flex; }
+.navigation li { background: black; border-radius: 4px; }
+.navigation li a {
+  padding: 0.5rem 0.75rem;
+  display: block;
+  font-size: 12px;
+  color: white;
+}
+
+/* Grid for Memebers */
+#members {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;   /* mobile: one per row */
+  gap: 1rem;
+}
+
+/* Codes for Member cards */
+.member-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.member-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.member-card h3 { margin: 0.5rem 0; font-size: 1rem; color: #333; }
+.member-card p  { margin: 0.25rem 0; font-size: 0.85rem; }
+
+/* For the Main */
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 2rem;
+  color: #002a50;
+  margin-bottom: 1rem;
+}
+/* Footer */
+footer { background: #002a50; color: white; text-align: center; padding: 1.5rem 1rem; }
+.footer-inner { max-width: 1200px; margin: auto; font-size: 0.9rem; }

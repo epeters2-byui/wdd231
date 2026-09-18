@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberia Chamber of Commerce - Business Directory</title>
+  <meta name="description" content="Explore the official business directory of the Liberia Chamber of Commerce featuring local businesses in Monrovia." />
+  <meta name="author" content="Emmanuel M. Peters" />
+
+  <meta property="og:title" content="Liberia Chamber of Commerce - Business Directory">
+  <meta property="og:description" content="Discover local businesses, connect with community leaders, and support economic growth in Liberia.">
+  <meta property="og:image" content="https://epeters2-byui.github.io/wdd231/chamber/images/logo.chamber_1.png">
+  <meta property="og:url" content="https://epeters2-byui.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/logo.chamber_1.png" alt="Liberia Chamber of Commerce Logo" />
+        <h1>Liberia Chamber of Commerce</h1>
+      </div>
+      <button id="menu" aria-label="Toggle Navigation Menu"></button>
+      <nav class="main-nav">
+        <ul class="navigation">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Business Directory</h2>
+    <section id="members" class="grid-view"></section>
+  </main>
+
+  <footer>
+    <div class="social">
+    <a href="https://https://web.facebook.com/?_rdc=1&_rdr#" target="_blank" aria-label="Facebook Profile">
+        <img src="images/facebook.svg" alt="facebook"/>
+      </a>
+      <a href="https://github.com/epeters2-byui" target="_blank" aria-label="GitHub Profile">
+        <img src="images/icons8-github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank" aria-label="LinkedIn Profile">
+        <img src="images/linkedin.svg" alt="LinkedIn"/>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram Profile">
+        <img src="images/instagram.svg" alt="Instagram"/>
+      </a>            
+    </div>
+    <div class="footer-inner">
+      <p>Liberia Chamber of Commerce, Bye-pass, Montserrado County, Republic of Liberia</p>
+      <p>info@liberiachamber.org | +231-777-059-044</p>
+      <p>&copy; <span id="year"></span> Emmanuel M. Peters | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

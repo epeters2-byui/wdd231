@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+
+  /* This hide hamburger on desktop's image */
+  #menu { display: none; }
+
+  /* Horizontal nav on desktop that matches the reference */
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  /* For 3-column grid on desktop image */
+  #members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+   /* Larger social icons on desktop */
+    .social img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social a {
+        padding: 0.7rem;
+    }
+}
