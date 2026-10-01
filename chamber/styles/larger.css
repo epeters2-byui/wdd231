@@ -1,9 +1,27 @@
-@media (min-width: 768px) {
 
-  /* This hide hamburger on desktop's image */
+/* For Chamber hope page*/
+
+@media (min-width: 768px) {
+  /* Join Page — form + cards side by side */
+  .join-page .join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .join-page .membership-cards {
+    grid-template-columns: 1fr;
+    position: sticky;
+    top: 1rem;
+  }
+  /* Header */
+  header { padding: 1rem 2rem; }
+  .logo-title h1 { font-size: 18px; }
+
+  /* Hamburger hidden */
   #menu { display: none; }
 
-  /* Horizontal nav on desktop that matches the reference */
+  /* Horizontal nav */
+  .main-nav { width: auto; }
   .navigation {
     display: flex !important;
     flex-direction: row;
@@ -13,11 +31,55 @@
     width: auto;
   }
 
-  /* For 3-column grid on desktop image */
+  /* Hero */
+  .hero { margin: 0 auto 2rem auto; max-width: 1200px; }
+    .hero-cta {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+  }
+  /* Home grid for events + weather */
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+  }
+
+  /* Spotlights */
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+  }
+
+  /* Section headings align left in cards */
+  .events h2, .weather h2 { padding-top: 0; }
+}
+
+
+@media (min-width: 768px) {
+
+  /* This hide hamburger on desktop's image */
+  #menu { display: none; }
+
+  /* Horizontal nav on desktop */
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  /* For image */
   #members {
     grid-template-columns: repeat(3, 1fr);
   }
-   /* Larger social icons on desktop */
+   /* Larger socialicons on desktop */
     .social img {
         width: 36px;
         height: 36px;

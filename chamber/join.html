@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberia Chamber of Commerce - Join</title>
+  <meta name="description" content="Apply to join the Liberia Chamber of Commerce. Choose from Non-Profit, Bronze, Silver, or Gold membership levels." />
+  <meta name="author" content="Emmanuel M. Peters" />
+  <meta property="og:title" content="Join the Liberia Chamber of Commerce">
+  <meta property="og:description" content="Membership benefits and application for the Liberia Chamber of Commerce.">
+  <meta property="og:image" content="https://epeters2-byui.github.io/wdd231/chamber/images/logo.chamber_1.png">
+  <meta property="og:url" content="https://epeters2-byui.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/join.js" defer></script>
+</head>
+<body class="join-page">
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/logo.chamber_1.png" alt="Liberia Chamber of Commerce Logo" />
+        <h1>Liberia Chamber of Commerce</h1>
+      </div>
+      <button id="menu" aria-label="Toggle Navigation Menu"></button>
+      <nav class="main-nav">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-heading">Join the Chamber</h2>
+    <p class="join-intro">Apply below and choose the membership level that fits your organization.</p>
+
+    <div class="join-layout">
+
+      <!-- FORM-->
+      <form method="get" action="thankyou.html" class="join-form">
+
+        <label>
+          First Name
+          <input
+            type="text"
+            name="fname"
+            title="Enter your first name"
+            autocomplete="given-name"
+            required
+          />
+        </label>
+
+        <label>
+          Last Name
+          <input
+            type="text"
+            name="lname"
+            title="Enter your last name"
+            autocomplete="family-name"
+            required
+          />
+        </label>
+
+        <label>
+          Organizational Title
+          <input
+            type="text"
+            name="orgtitle"
+            title="Enter your title (letters, hyphens, spaces only — minimum 7 characters)"
+            autocomplete="organization-title"
+            pattern="[A-Za-z\-\s]{7,}"
+          />
+        </label>
+
+        <label>
+          Email Address
+          <input
+            type="email"
+            name="email"
+            title="Enter a valid email address"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+          />
+        </label>
+
+        <label>
+          Mobile Phone
+          <input
+            type="tel"
+            name="phone"
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+            required
+          />
+        </label>
+
+        <label>
+          Business / Organization Name
+          <input
+            type="text"
+            name="organization"
+            title="Enter your business or organization name"
+            autocomplete="organization"
+            required
+          />
+        </label>
+
+        <label>
+          Membership Level
+          <select name="membership" required>
+            <option value="" disabled selected>-- Select a level --</option>
+            <option value="np">NP Membership (Non-Profit) — Free</option>
+            <option value="bronze">Bronze Membership — $100/year</option>
+            <option value="silver">Silver Membership — $250/year</option>
+            <option value="gold">Gold Membership — $500/year</option>
+          </select>
+        </label>
+
+        <label>
+          Business / Organization Description
+          <textarea
+            name="description"
+            title="Briefly describe your business or organization"
+            rows="4"
+          ></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <input type="submit" value="Submit Application" />
+
+      </form>
+
+      <!-- ============ MEMBERSHIP CARDS ============ -->
+      <div class="membership-cards">
+
+        <div class="membership-card card-np">
+          <h3>NP Membership</h3>
+          <p>For non-profit organizations.</p>
+          <p class="fee">Free</p>
+          <a href="#" data-modal="modal-np">Learn More</a>
+        </div>
+
+        <div class="membership-card card-bronze">
+          <h3>Bronze Membership</h3>
+          <p>Entry-level membership.</p>
+          <p class="fee">$100 / year</p>
+          <a href="#" data-modal="modal-bronze">Learn More</a>
+        </div>
+
+        <div class="membership-card card-silver">
+          <h3>Silver Membership</h3>
+          <p>For growing businesses.</p>
+          <p class="fee">$250 / year</p>
+          <a href="#" data-modal="modal-silver">Learn More</a>
+        </div>
+
+        <div class="membership-card card-gold">
+          <h3>Gold Membership</h3>
+          <p>Maximum visibility.</p>
+          <p class="fee">$500 / year</p>
+          <a href="#" data-modal="modal-gold">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ MODALS ============ -->
+  <dialog id="modal-np" class="modal">
+    <h3>NP Membership — Free</h3>
+    <ul>
+      <li>Business directory listing</li>
+      <li>Monthly newsletter</li>
+      <li>Invitation to community events</li>
+    </ul>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <dialog id="modal-bronze" class="modal">
+    <h3>Bronze Membership — $100/year</h3>
+    <ul>
+      <li>All NP benefits</li>
+      <li>Event discounts for one attendee</li>
+      <li>Basic social media mention</li>
+    </ul>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <dialog id="modal-silver" class="modal">
+    <h3>Silver Membership — $250/year</h3>
+    <ul>
+      <li>All Bronze benefits</li>
+      <li>Rotating spotlight on the home page</li>
+      <li>Two event discounts</li>
+      <li>Business training access</li>
+    </ul>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <dialog id="modal-gold" class="modal">
+    <h3>Gold Membership — $500/year</h3>
+    <ul>
+      <li>All Silver benefits</li>
+      <li>Featured spotlight position</li>
+      <li>Sponsorship priority</li>
+      <li>Four event discounts</li>
+      <li>Advertising on chamber site</li>
+    </ul>
+    <button class="modal-close">Close</button>
+  </dialog>
+
+  <footer>
+    <div class="social">
+      <a href="https://web.facebook.com" target="_blank" aria-label="Facebook Profile">
+        <img src="images/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://github.com/epeters2-byui" target="_blank" aria-label="GitHub Profile">
+        <img src="images/icons8-github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank" aria-label="LinkedIn Profile">
+        <img src="images/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram Profile">
+        <img src="images/instagram.svg" alt="Instagram" />
+      </a>
+    </div>
+    <div class="footer-inner">
+      <p>Liberia Chamber of Commerce, Bye-pass, Montserrado County, Republic of Liberia</p>
+      <p>info@liberiachamber.org | +231-777-059-044</p>
+      <p>&copy; <span id="year"></span> Emmanuel M. Peters | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
