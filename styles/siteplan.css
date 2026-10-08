@@ -1,0 +1,223 @@
+/* siteplan.css - Styles for the LIDI Website Plan */
+
+:root {
+  --green: #1E5631;
+  --gold: #D4A017;
+  --cream: #F8F5EF;
+  --charcoal: #2B2B2B;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ============ HEADER ============ */
+.plan-header {
+  position: relative;
+  background: var(--green);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 5px solid var(--gold);
+}
+
+.plan-header h1 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Logo positioned on the LEFT, vertically centered */
+.plan-logo {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  display: block;
+}
+/* ============ MAIN ============ */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.plan-section {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--gold);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.plan-section h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  color: var(--green);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--cream);
+}
+
+.plan-section h3 {
+  font-family: 'Merriweather', Georgia, serif;
+  color: var(--charcoal);
+  font-size: 1.05rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.plan-section p,
+.plan-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.plan-section ul,
+.plan-section ol {
+  padding-left: 1.5rem;
+}
+
+code {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ============ SCENARIOS ============ */
+.scenario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--cream);
+}
+.scenario:first-of-type { border-top: none; }
+
+.scenario-text h3 {
+  color: var(--green);
+  margin-top: 0;
+}
+
+.scenario-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.scenario-figure img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border: 3px solid var(--green);
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.scenario-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #555;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .scenario {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .scenario-text { flex: 2; }
+  .scenario-figure { flex: 1; }
+  .scenario-figure img { max-width: 100%; }
+}
+
+/* ============ COLOR TABLE ============ */
+.color-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.color-table th {
+  background: var(--green);
+  color: white;
+  padding: 0.5rem;
+  text-align: left;
+  font-family: 'Merriweather', Georgia, serif;
+}
+.color-table td {
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+.swatch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  border: 1px solid #999;
+}
+.swatch-green    { background: #1E5631; }
+.swatch-gold     { background: #D4A017; }
+.swatch-cream    { background: #F8F5EF; }
+.swatch-charcoal { background: #2B2B2B; }
+
+/* ============ WIREFRAMES ============ */
+.wireframe-label {
+  margin: 1.25rem 0 0.5rem;
+  color: var(--green);
+}
+
+.wireframe-figure {
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
+.wireframe-figure img {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #333;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+.wireframe-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Keep the mobile wireframe smaller */
+.wireframe-figure.mobile img { max-width: 360px; }
+
+/* ============ FOOTER ============ */
+.plan-footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  border-top: 5px solid var(--gold);
+}
