@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Monrovia - Liberia Chamber of Commerce</title>
+  <meta name="description" content="Discover Monrovia, Liberia — points of interest, culture, and attractions curated by the Liberia Chamber of Commerce." />
+  <meta name="author" content="Emmanuel M. Peters" />
+
+  <meta property="og:title" content="Discover Monrovia - Liberia Chamber of Commerce">
+  <meta property="og:description" content="Explore points of interest in and around Monrovia, Liberia.">
+  <meta property="og:image" content="https://epeters2-byui.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:url" content="https://epeters2-byui.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/discover.js" type="module"></script>
+</head>
+<body class="discover-page">
+ <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/logo.chamber_1.png" alt="Liberia Chamber of Commerce Logo" />
+        <h1>Liberia Chamber of Commerce</h1>
+      </div>
+      <button id="menu" aria-label="Toggle Navigation Menu"></button>
+      <nav class="main-nav">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2 class="page-heading">Discover Monrovia</h2>
+
+    <!-- Visitor message from localStorage -->
+    <div id="visitor-message" class="visitor-message" aria-live="polite"></div>
+
+    <p class="discover-intro">
+      Explore the places that make Monrovia, Liberia a vibrant place to live, work, and do business.
+    </p>
+    <!-- 8 cards rendered by discover.js -->
+    <div id="discover-grid" class="discover-grid"></div>
+    <dialog id="item-modal" class="modal">
+  <h3 id="modal-title"></h3>
+  <p id="modal-address"></p>
+  <p id="modal-description"></p>
+  <button type="button" class="modal-close">Close</button>
+</dialog>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://web.facebook.com" target="_blank" aria-label="Facebook Profile">
+        <img src="images/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://github.com/epeters2-byui" target="_blank" aria-label="GitHub Profile">
+        <img src="images/icons8-github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank" aria-label="LinkedIn Profile">
+        <img src="images/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram Profile">
+        <img src="images/instagram.svg" alt="Instagram" />
+      </a>
+    </div>
+    <div class="footer-inner">
+      <p>Liberia Chamber of Commerce, Bye-pass, Montserrado County, Republic of Liberia</p>
+      <p>info@liberiachamber.org | +231-777-059-044</p>
+      <p>&copy; <span id="year"></span> Emmanuel M. Peters | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

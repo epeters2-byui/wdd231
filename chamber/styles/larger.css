@@ -13,6 +13,26 @@
     position: sticky;
     top: 1rem;
   }
+    /* ===== DISCOVER — Medium screens (2 columns + featured) ===== */
+  .discover-page .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card1"
+      "card2 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+    gap: 1.25rem;
+  }
+
+  /* Hover effect — zoom + shadow (desktop only)*/
+  .discover-page .discover-card img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .discover-page .discover-card img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
   /* Header */
   header { padding: 1rem 2rem; }
   .logo-title h1 { font-size: 18px; }
@@ -30,7 +50,6 @@
     padding: 0;
     width: auto;
   }
-
   /* Hero */
   .hero { margin: 0 auto 2rem auto; max-width: 1200px; }
     .hero-cta {
@@ -46,7 +65,6 @@
     margin: 0 auto 2rem auto;
     padding: 0 1rem;
   }
-
   /* Spotlights */
   .spotlight-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -58,7 +76,6 @@
   /* Section headings align left in cards */
   .events h2, .weather h2 { padding-top: 0; }
 }
-
 
 @media (min-width: 768px) {
 
@@ -74,7 +91,6 @@
     padding: 0;
     width: auto;
   }
-
   /* For image */
   #members {
     grid-template-columns: repeat(3, 1fr);
@@ -88,4 +104,16 @@
     .social a {
         padding: 0.7rem;
     }
+}
+/* LARGE DESKTOP (1025px and up) — 3-column grid with featured card ===== */
+@media (min-width: 1025px) {
+  .discover-page .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2"
+      "card1 card1 card3"
+      "card4 card5 card6"
+      "card7 card8 card8";
+    gap: 1.5rem;
+  }
 }

@@ -554,3 +554,129 @@ footer { background: #002a50; color: white; text-align: center; padding: 1.5rem 
   object-fit: contain;
   display: block;
 }
+
+/*  DISCOVER PAGE*/
+.discover-page .page-heading {
+  text-align: center;
+  padding-top: 2rem;
+  color: #002a50;
+}
+.discover-page .discover-intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Visitor message banner */
+.discover-page .visitor-message {
+  background: #007b5e;
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+/*  DISCOVER GRID — Small screens (1 column) */
+.discover-page .discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/*  DISCOVER CARD */
+.discover-page .discover-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discover-page .discover-card h2 {
+  margin: 0;
+  color: #002a50;
+  font-size: 1.1rem;
+  text-align: left;
+  padding-top: 0;
+}
+
+.discover-page .discover-card figure {
+  margin: 0;
+}
+.discover-page .discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+.discover-page .discover-card address {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #555;
+}
+.discover-page .discover-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex: 1.5;
+}
+.discover-page .discover-card .learn-more {
+  background: #007b5e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.3s;
+}
+.discover-page .discover-card .learn-more:hover {
+  background: #00664d;
+}
+/* Discover modal */
+.discover-page .modal {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.discover-page .modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+.discover-page .modal h3 {
+  margin-top: 0;
+  color: #002a50;
+}
+.discover-page .modal p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+.discover-page .modal-close {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background: #007b5e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.discover-page .modal-close:hover {
+  background: #00664d;
+}
