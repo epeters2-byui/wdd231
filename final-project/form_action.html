@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Received - LIDI</title>
+  <meta name="description" content="Thank you for registering your farm with LIDI." />
+  <meta name="author" content="Emmanuel M. Peters" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/form-action.js" type="module"></script>
+</head>
+<body class="form-page">
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/lidi.logo.png" alt="LIDI Logo" />
+        <span class="site-name">Livelihood Development Institute</span>
+      </div>
+      <button id="menu" aria-label="Toggle Navigation Menu"></button>
+      <nav class="main-nav">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Thank You!</h1>
+    <p class="page-intro">Your farm registration has been received.</p>
+
+    <section class="result-card">
+      <h2>Your Submitted Information</h2>
+      <ul id="form-results"></ul>
+    </section>
+
+    <a href="index.html" class="cta-button">Return Home</a>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+
+      <!-- LEFT: Contact info -->
+      <div class="footer-col footer-left">
+        <p><strong>Livelihood Development Institute</strong></p>
+        <p>Barnesville Road, Montserrado County, Liberia</p>
+        <p>info@lidi-liberia.org</p>
+        <p>+231-777-059-044</p>
+      </div>
+
+      <!-- CENTER: Social media -->
+      <div class="footer-col footer-center">
+        <div class="social">
+          <a href="https://web.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://github.com/epeters2-byui" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="images/icons8-github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Project info -->
+      <div class="footer-col footer-right">
+        <p>WDD 231 Class Project</p>
+        <p>Emmanuel M. Peters</p>
+        <p>&copy; <span id="year"></span> LIDI</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">Project Video</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

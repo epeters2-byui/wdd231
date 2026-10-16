@@ -1,0 +1,108 @@
+/* larger.css - LIDI final project - Desktop (768px and up) */
+
+@media (min-width: 768px) {
+
+  /* ===== HEADER — logo + site name + nav on ONE row ===== */
+  header { padding: 1rem 2rem; }
+  .site-name { font-size: 1.1rem; }
+
+  /* Hide hamburger */
+  #menu { display: none; }
+
+  /* Header inner: keep everything on one row, no wrapping */
+  .header-inner {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Nav no longer takes full width — sits inline with the logo */
+  .main-nav {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  /* Force nav horizontal and visible — beats the mobile .navigation.open rule */
+  .navigation,
+  .navigation.open {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .navigation li {
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .navigation li a {
+    padding: 0.35rem 0.25rem;
+    font-size: 0.95rem;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .navigation li a:hover {
+    background: transparent;
+    border-bottom-color: rgba(255,255,255,0.5);
+    text-decoration: none;
+  }
+
+  .navigation li a.active {
+    background: transparent;
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+    font-weight: 700;
+  }
+
+  /* ===== TYPOGRAPHY ===== */
+  h1 { font-size: 2.2rem; }
+
+  /* ===== HOME — hero + 3-column rows ===== */
+  .hero { margin: 0 auto 2rem auto; max-width: 1200px; }
+
+  .home-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* ===== SERVICES ===== */
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* ===== MARKETPLACE ===== */
+  .filter-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .farmer-grid { grid-template-columns: repeat(2, 1fr); }
+
+}
+  /* ===== FOOTER — three columns ===== */
+  .footer-inner {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .footer-left { text-align: left; }
+  .footer-center { text-align: center; }
+  .footer-right { text-align: right; }
+
+/* ===== LARGE DESKTOP (1025px and up) ===== */
+@media (min-width: 1025px) {
+  .farmer-grid { grid-template-columns: repeat(3, 1fr); }
+  .service-grid { grid-template-columns: repeat(3, 1fr); }
+}

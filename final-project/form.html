@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Your Farm - LIDI</title>
+  <meta name="description" content="Register your farm with the Livelihood Development Institute and connect to markets, training, and microfinance." />
+  <meta name="author" content="Emmanuel M. Peters" />
+  <meta property="og:title" content="Register Your Farm - LIDI">
+  <meta property="og:description" content="Free registration for smallholder farmers in Liberia.">
+  <meta property="og:image" content="https://epeters2-byui.github.io/wdd231/final/images/lidi-logo.png">
+  <meta property="og:url" content="https://epeters2-byui.github.io/wdd231/final/form.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/main.js" type="module"></script>
+</head>
+<body class="form-page">
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/lidi.logo.png" alt="LIDI Logo" />
+        <span class="site-name">Livelihood Development Institute</span>
+      </div>
+      <button id="menu" aria-label="Toggle Navigation Menu"></button>
+      <nav class="main-nav">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Register Your Farm</h1>
+    <p class="page-intro">Fill out the form below to join LIDI. Registration is free for smallholder farmers.</p>
+
+    <form method="get" action="form-action.html" class="registration-form">
+      <label>Full Name
+        <input type="text" name="name" title="Your full name" autocomplete="name" required />
+      </label>
+      <label>Email Address
+        <input type="email" name="email" title="Your email address" autocomplete="email" placeholder="you@example.com" required />
+      </label>
+      <label>Phone Number
+        <input type="tel" name="phone" title="Your phone number" autocomplete="tel" required />
+      </label>
+      <label>County / Region
+        <select name="region" required>
+          <option value="" disabled selected>-- Select a region --</option>
+          <option value="Montserrado">Montserrado</option>
+          <option value="Bong">Bong</option>
+          <option value="Nimba">Nimba</option>
+          <option value="Lofa">Lofa</option>
+          <option value="Grand Bassa">Grand Bassa</option>
+          <option value="Bomi">Bomi</option>
+          <option value="Margibi">Margibi</option>
+          <option value="Grand Cape Mount">Grand Cape Mount</option>
+          <option value="Sinoe">Sinoe</option>
+        </select>
+      </label>
+      <label>Primary Crop
+        <input type="text" name="crop" title="Your primary crop" required />
+      </label>
+      <label>Years of Experience
+        <input type="number" name="years" title="Years of farming experience" min="0" max="80" required />
+      </label>
+      <label>Farm Description
+        <textarea name="description" title="Briefly describe your farm" rows="4"></textarea>
+      </label>
+      <input type="submit" value="Register Farm" />
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+
+      <!-- LEFT: Contact info -->
+      <div class="footer-col footer-left">
+        <p><strong>Livelihood Development Institute</strong></p>
+        <p>Barnesville Road, Montserrado County, Liberia</p>
+        <p>info@lidi-liberia.org</p>
+        <p>+231-777-059-044</p>
+      </div>
+
+      <!-- CENTER: Social media -->
+      <div class="footer-col footer-center">
+        <div class="social">
+          <a href="https://web.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://github.com/epeters2-byui" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="images/icons8-github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Project info -->
+      <div class="footer-col footer-right">
+        <p>WDD 231 Class Project</p>
+        <p>Emmanuel M. Peters</p>
+        <p>&copy; <span id="year"></span> LIDI</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">Project Video</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

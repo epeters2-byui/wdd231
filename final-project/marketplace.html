@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace - LIDI</title>
+  <meta name="description" content="Browse 16 rural Liberian farmers and their crops on LIDI's e-marketplace. Connect directly with farmers by region and product." />
+  <meta name="author" content="Emmanuel M. Peters" />
+  <meta property="og:title" content="Marketplace - LIDI">
+  <meta property="og:description" content="Meet rural Liberian farmers and their crops on the LIDI e-marketplace.">
+  <meta property="og:image" content="https://epeters2-byui.github.io/wdd231/final/images/marketplace-hero.jpg">
+  <meta property="og:url" content="https://epeters2-byui.github.io/wdd231/final/marketplace.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/marketplace.js" type="module"></script>
+</head>
+<body class="marketplace-page">
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-title">
+        <img class="logo" src="images/lidi.logo.png" alt="LIDI Logo" />
+        <span class="site-name">Livelihood Development Institute</span>
+      </div>
+      <button id="menu" aria-label="Toggle Navigation Menu"></button>
+      <nav class="main-nav">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="marketplace.html" class="active">Marketplace</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/marketplace-hero.jpg" alt="Farmers selling fresh produce at a Liberian market" />
+      <a href="form.html" class="cta-button">Join the Marketplace</a>
+    </section>
+
+    <h1>Farmer Marketplace</h1>
+    <p class="page-intro">Browse our registered farmers by region and crop. Click any card to see full details, or save your favorites.</p>
+    <div class="filter-bar">
+      <label>Filter by Region:
+        <select id="region-filter"><option value="all">All Regions</option></select>
+      </label>
+      <label>Filter by Crop:
+        <select id="crop-filter"><option value="all">All Crops</option></select>
+      </label>
+      <p class="filter-summary" id="filter-summary"></p>
+    </div>
+
+    <div id="farmer-grid" class="farmer-grid"></div>
+
+    <dialog id="farmer-modal" class="modal">
+      <h2 id="modal-farmer-name"></h2>
+      <p><strong>Region:</strong> <span id="modal-region"></span></p>
+      <p><strong>Primary Crop:</strong> <span id="modal-crop"></span></p>
+      <p><strong>Years of Experience:</strong> <span id="modal-years"></span></p>
+      <p><strong>Phone:</strong> <span id="modal-phone"></span></p>
+      <p id="modal-bio"></p>
+      <button class="modal-close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+
+      <!-- LEFT: Contact info -->
+      <div class="footer-col footer-left">
+        <p><strong>Livelihood Development Institute</strong></p>
+        <p>Barnesville Road, Montserrado County, Liberia</p>
+        <p>info@lidi-liberia.org</p>
+        <p>+231-777-059-044</p>
+      </div>
+
+      <!-- CENTER: Social media -->
+      <div class="footer-col footer-center">
+        <div class="social">
+          <a href="https://web.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://github.com/epeters2-byui" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="images/icons8-github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/emmanuel-peters-1723531a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Project info -->
+      <div class="footer-col footer-right">
+        <p>WDD 231 Class Project</p>
+        <p>Emmanuel M. Peters</p>
+        <p>&copy; <span id="year"></span> LIDI</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">Project Video</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
